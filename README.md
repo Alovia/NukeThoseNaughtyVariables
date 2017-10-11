@@ -1,13 +1,10 @@
 # NukeThoseNaughtyVariables
 
-If you code in golang and you're doing just a quick little program,
-the compilation is often disrupted because you have unused variables
-floating around.  
+If you code in golang and you're doing just a quick little program, the compilation is often disrupted because you have unused variables floating around.  
 
-This script comments them out in a easy to find way, so you do not have 
-to hide them with the (useless) '_ = foo' trick, and, repeatedly tries 
-to compile until they all are gone, and barring any other (genuine) errors, 
-runs your experiment.
+This script comments them out in a easy to find way, so you do not have to hide them with the (useless) '_ = foo' trick. 
+
+The script also repeatedly tries to compile your code until all the offending variables are removed, and barring any other (genuine) errors, it will then run your experiment and present you with a complete compiler errors list.
 
 Happy hacking!
 
